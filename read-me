@@ -1,0 +1,16 @@
+To setup :
+
+Run 'npm install'
+Run 'npm start'
+
+Used material ui, redux toolkit, momentJS.
+Added data table component with the pagination.
+Results show only for the upcomming months. So drop down shows only the upcoming months.
+Token will clear on the logout button.
+
+If time permits,
+
+Will do more styles to the application to feel better.
+I may add the images depending on the screen resolution. (mobile, tablet, desktop)
+Add some loading gifs
+May clean and optimize the code and add few comments
