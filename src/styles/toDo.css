@@ -10,8 +10,15 @@
 .to-do-header {
   text-align: center;
   margin-top: 50px;
+  font-style: oblique;
 }
 
 .idPHNo {
   font-size: 17px !important;
+}
+
+.month-selection {
+  width: 30%;
+  display: flex;
+  justify-content: right;
 }

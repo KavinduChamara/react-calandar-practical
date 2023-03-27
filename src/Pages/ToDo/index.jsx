@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { useDispatch, useSelector} from "react-redux";
-import { fetchItems } from '../../features/toDoSlice';
+import React, { useState } from "react";
+import { useSelector} from "react-redux";
 import Table from '../../Components/Table';
 import Header from '../../Components/Header';
 import ToDoDialog from '../../Components/ToDoDialog';
@@ -9,7 +8,6 @@ import "../../styles/toDo.css";
 import moment from 'moment'
 
 const ToDo = (props) => {
-  const dispatch = useDispatch();
   let toDoList = useSelector((state) => state.toDos.toDos);
   const columnsList = [
     {
@@ -47,7 +45,7 @@ const ToDo = (props) => {
   return (
     <div className="mainDiv">
       <Header />
-      <div className="to-do-header"><h2>To Do List</h2></div>
+      <div className="to-do-header"><h2>Your Calendar Here !</h2></div>
       <Paper className="table-div">
         <Table data={toDoList} columns={columns} handleModal={handleModal}/>
       </Paper>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import DataTable from 'react-data-table-component';
 import { useDispatch} from "react-redux";
 import { fetchItems } from '../../features/toDoSlice';
@@ -27,22 +27,22 @@ const Table = (props) => {
   return (
     <div>
       <div>
-      <Box sx={{ minWidth: 120 }}>
-      <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">Month</InputLabel>
-        <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
-          value={selectedMonth}
-          label="Month"
-          onChange={handleChange}
-        >
-          {activeMonths.map(month =>
-            <MenuItem value={month}>{month}</MenuItem>
-          )};
-        </Select>
-      </FormControl>
-    </Box>
+        <Box sx={{ minWidth: 120 }}>
+          <FormControl className="month-selection">
+            <InputLabel id="demo-simple-select-standard-label">Month</InputLabel>
+            <Select
+              labelId="demo-simple-select-standard"
+              id="demo-simple-select"
+              value={selectedMonth}
+              label="Month"
+              onChange={handleChange}
+            >
+              {activeMonths.map(month =>
+                <MenuItem value={month}>{month}</MenuItem>
+              )};
+            </Select>
+          </FormControl>
+        </Box>
       </div>
       <DataTable
         columns={props.columns}

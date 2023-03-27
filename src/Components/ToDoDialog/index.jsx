@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../../styles/header.css";
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
@@ -19,7 +19,7 @@ const ToDoDialog = (props) => {
       </DialogTitle>
       <DialogContent>
         <DialogContentText>
-          <div className="image-div"><img className="inner-image" src=  {props.element && props.element.images.mobile}/></div>
+          <div className="image-div"><img className="inner-image" src={props.element && props.element.images.mobile}/></div>
           <div className="task-description" >{props.element && props.element.description}</div>
         </DialogContentText>
       </DialogContent>

@@ -23,7 +23,7 @@ const Login = (props) => {
           <KeyTwoToneIcon className="login-key" sx={{ fontSize: 60 }}/>
         </div>
         <div className="login-input-div login-header">
-          <h2>Login</h2>
+          <h2>User Login</h2>
         </div>
         <div className="login-input-div login-btn-div">
           {loginMessage &&
@@ -33,7 +33,7 @@ const Login = (props) => {
           }
         </div>
         <div className="login-input-div login-btn-div">
-          <Button variant="outlined" onClick={handleLogin}>Login</Button>
+          <Button variant="outlined" onClick={handleLogin}>Authenticate</Button>
         </div>
       </Paper>
     </div>
