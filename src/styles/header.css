@@ -1,0 +1,37 @@
+.header-div {
+  background: #a9aaab;
+  padding: 20px;
+  display: flex;
+  justify-content: end;
+}
+
+.header-item {
+  margin-right: 50px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.active-header-item {
+  font-weight: bolder;
+}
+
+.login-header {
+  text-align: center;
+}
+
+.image-div {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.inner-image {
+  margin: auto;
+}
+
+#responsive-dialog-title {
+  text-align: center;
+}
+
+.task-description {
+  text-align: justify;
+}
